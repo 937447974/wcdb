@@ -13,7 +13,7 @@ Pod::Spec.new do |wcdb|
   wcdb.homepage     = "https://github.com/Tencent/wcdb"
   wcdb.license      = { :type => "BSD", :file => "LICENSE" }
   wcdb.author             = { "sanhuazhang" => "sanhuazhang@tencent.com" }
-  wcdb.ios.deployment_target = "8.0"
+  wcdb.ios.deployment_target = "9.0"
   wcdb.osx.deployment_target = "10.9"
   wcdb.watchos.deployment_target = "2.0"
   wcdb.tvos.deployment_target = "9.0"
@@ -33,7 +33,7 @@ Pod::Spec.new do |wcdb|
     "OTHER_SWIFT_FLAGS[config=Debug][sdk=iphonesimulator*]" => "-D WCDB_IOS -D DEBUG",
     "OTHER_SWIFT_FLAGS[config=Debug][sdk=iphoneos*]" => "-D WCDB_IOS -D DEBUG",
   }
-  wcdb.swift_version = '4.2'
+  wcdb.swift_version = '5.0'
   wcdb.dependency 'WCDBOptimizedSQLCipher', '~> 1.2.0'
   wcdb.dependency 'SQLiteRepairKit', '~> 1.2.0'
 end
